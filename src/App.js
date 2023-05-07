@@ -1,3 +1,5 @@
+import { fetchWeather } from "./api/fetchWeather"
+
 const App = () => {
   return <h1>App</h1>
 }
