@@ -1,7 +1,18 @@
-import { fetchWeather } from "./api/fetchWeather"
+import {fetchWeather} from './api/fetchWeather'
 
 const App = () => {
-  return <h1>App</h1>
+  const [query, setQuery] = useState('')
+  return (
+    <div className='main-container'>
+      <input
+        type='text'
+        className='search'
+        placeholder='Search ...'
+        value={query}
+        onChange={(e) => setQuery(e.target.value)}
+      />
+    </div>
+  )
 }
 
 export default App
