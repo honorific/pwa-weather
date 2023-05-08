@@ -30,7 +30,7 @@ const App = () => {
           </h2>
           <div className='city-temp'>
             {Math.round(weather.main.temp)}
-            <sup>&deg;</sup>
+            <sup>&deg;C</sup>
           </div>
         </div>
       )}
