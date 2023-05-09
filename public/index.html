@@ -19,7 +19,10 @@
     <script>
       if (ServiceWorker in navigator) {
         window.addEventListener('load', () => {
-          navigator.serviceWorker.register('./serviceworker')
+          navigator.serviceWorker
+            .register('./serviceworker')
+            .then((reg) => console.log('success: ', reg.scope))
+            .catch((err) => console.log('failure: ', err))
         })
       }
     </script>
